@@ -15,9 +15,6 @@ class Book{
     set setTitle(title){
         this.title = title;
     }
-    get getAvailabilityStatus(){
-        return this.availabilityStatus;
-    }
     set setAuthor(author){
         this.author = author;
     }
