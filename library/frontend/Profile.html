@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Profile</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../backend/script.js" defer></script>
+</head>
+<body>
+<h1>My Profile</h1>
+<form>
+    <label for="List of borrowed books"></label>
+    <option value="" onchange="getListOfBorrowedBooks()" id="List of borrowed books"></option>
+    <button type="reset" onclick="displayListOfBorrowedBooks()">LIST OF BORROWED BOOKS </button>
+
+
+    <label for="List of returned books"></label>
+    <option value="" onchange="getListOfReturnedBooks()" id="List of returned books"></option>
+    <button type="reset" onclick="displayListOfReturnedBooks()"> LIST OF RETURNED BOOKS</button>
+</form>
+</body>
+</html>
