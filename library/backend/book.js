@@ -6,25 +6,25 @@ class Book{
         this.availabilityStatus = Boolean(false);
         this.ISBN =ISBN;
     }
-    set setAvailabilityStatus(status){
+    set availabilityStatus(status){
         this.availabilityStatus = status;
     }
-    get getAvailabilityStatus(){
+    get availabilityStatus(){
         return this.availabilityStatus;
     }
-    set setTitle(title){
+    set title(title){
         this.title = title;
     }
-    set setAuthor(author){
+    set author(author){
         this.author = author;
     }
-    get getAuthor(){
+    get author(){
         return this.author;
     }
-    set setISBN(ISBN){
+    set ISBN(ISBN){
         this.ISBN = ISBN;
     }
-    get getISBN(){
+    get ISBN(){
         return this.ISBN;
     }
     
