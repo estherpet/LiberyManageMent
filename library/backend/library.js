@@ -7,4 +7,8 @@ class Library{
         Books.push(book);
     }
 
+
 }
+let l= new Library();
+l.addBook("john", "miko","2222334")
+console.log(l)
