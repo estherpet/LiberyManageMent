@@ -21,10 +21,12 @@ form.addEventListener("submit", (e) => {
       let books = "";
       response.results.map((book) => {
         
-        return (books += 
-        `<h1>Book Title: <span id="bookTitle">${book.title}</span></h1>
-<h2>Author Name: <span id="authorName">${book.authors[0].name}</span></h2>
- <img src=${book.formats[`image/jpeg`]} alt="book_image"/>`)
+        return (books += `<h1>Book Title: <span id="bookTitle">${
+          book.title
+        }</span></h1>
+
+ <img src=${book.formats[`image/jpeg`]} alt="book_image"/>
+ <button id="borrowbutton">Borrow</button>`);
 
 })
  
