@@ -1,14 +1,28 @@
-const{Book} = require("../backend/book.js")
-const Books = []
+const Book = require("../backend/book.js").Book
 
 class Library{
-    addBook(titile, author, ISBN){
-        const book = new Book(titile, author, ISBN);
-        Books.push(book);
+    constructor(){
+        let books =[]
+
+        this.addBook = (title, author, isbn) =>{
+            let b = new Book(title, author, isbn)
+            books.push(b);
+        }
+
+       this.deletebook = (title) => {
+        for(let b of books){
+            if(b.title===title){
+                books.filter(b)
+            }
+        }
+       }
+
+
     }
 
 
 }
-let l= new Library();
-l.addBook("john", "miko","2222334")
-console.log(l)
+
+let lib = new Library()
+lib.addBook("jjj","aaa","1234")
+console.log(lib)
